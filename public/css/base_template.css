@@ -122,8 +122,11 @@ a img.aligncenter {
 /****** Layot header ******/
 /*************************/
 
-.wrap_lay2, .wrap_lay4, .wrap_lay5, .wrap_lay6, .wrap_lay7 {
-	margin: 0 auto 60px;
+.wrap_lay5{
+	padding: 20px 0;
+	z-index: 3;
+}
+.wrap_lay2, .wrap_lay4, .wrap_lay6, .wrap_lay7 {
 	padding: 20px 0;
 	border-radius: 5px;
 	box-shadow: 0 0 4px 1px rgba(0, 0, 0, .6);
@@ -134,9 +137,6 @@ a img.aligncenter {
 }
 .wrap_lay4 {
 	width: 95%;
-}
-.wrap_lay5 {
-	width: 1000px;
 }
 .wrap_lay6 {
 	margin: 0px auto 60px;
@@ -193,7 +193,7 @@ a img.aligncenter {
 	background-repeat: no-repeat;
 }
 #header {
-	width: 960px;
+	width: 85%;
 	position: relative;
 	margin:auto;
 	padding: 23px 70px;
@@ -397,7 +397,7 @@ ul.icon_socials li a {
 	background: #e4e4e4;
 }
 #content {
-	width: 960px;
+	width: 95%;
 	margin: 0 auto;
 	padding: 40px 0;
 	z-index: 10;
@@ -705,12 +705,7 @@ img.alignright {
 /****************/
 /*** Footer ****/
 /**************/
-
-.wrapper_footer {
-	min-height: 200px;
-}
 #footer {
-	width: 960px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 20px 0;
