@@ -133,7 +133,7 @@ a img.aligncenter {
 	width: 1020px;
 }
 .wrap_lay4 {
-	width: 1000px;
+	width: 95%;
 }
 .wrap_lay5 {
 	width: 1000px;
@@ -193,7 +193,7 @@ a img.aligncenter {
 	background-repeat: no-repeat;
 }
 #header {
-	width: 70%;
+	width: 960px;
 	position: relative;
 	margin:auto;
 	padding: 23px 70px;

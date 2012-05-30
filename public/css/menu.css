@@ -2,6 +2,13 @@
 /*** Menu ***/
 /***********/
 
+.container_menu{
+	height: 20px;
+	margin: 0 auto;
+	clear: both;
+	padding: 0 25px;
+	width: 910px;
+}
 .main_menu_sides{
 	position:absolute;
 	top: 0; width: 20px;
