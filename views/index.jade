@@ -35,75 +35,44 @@ html(dir='ltr', lang='en-US', xmlns='http://www.w3.org/1999/xhtml')
         .lay_base.header_pattern
         .lay_base.header_shadow
         include header
-      .row-fluid
-        .span2
-          .row-fluid
-            .span1
-            .span11
-              .wrap_lay5
-                .boxes.width_boxes_3.7
-                  .container_widgets_pieces
-                    .widget_corner.widget_top_left.widget_top_left_023
-                      .widget_token_left.widget_token_left_023
-                    .widget_topbottom.widget_top_center.widget_top_center_023
-                    .widget_corner.widget_top_right.widget_top_right_023
-                      .widget_token_right.widget_token_right_023
-                    .widget_sides.widget_middle_left
-                    .widget_center.widget_content
-                      h3 Widgets 3
-                      .textwidget
-                        div(style='border: 5px solid white; box-shadow: 0 0px 5px rgba(0, 0, 0, .5); ;width: 226px; height: 107px; margin: 0 auto;')
-                          img(src='server/img/features_11.jpg', width='226', height='107')
-                        br
-                        p(style='text-align: justify;')
-                          | If you become premium, you will have access to our shock bundle: 30.000 Iconshock icons, 50 vector characters, 99 psd themes, 20 cv templates, 500 Themeshock exclusive themes, 500 logo templates and hundreds of design element sets. All included source files.
-                    .widget_sides.widget_middle_right.widget_middle_right_023
-                    .widget_corner.widget_bottom_left.widget_bottom_left_023
-                    .widget_topbottom.widget_bottom_center.widget_bottom_center_023
-                    .widget_corner.widget_bottom_right.widget_bottom_right_023
-                  //
-                     end container_widgets_pieces 
-                  .widget_token_bottom.widget_token_bottom_023
+      .global_wrapper.wrap_lay4
+        .wrapper_content
+          .lay_base.content_pattern
+          .bar_separate.footer_separate
+          .lay_base.content_shadow
+          #content
+            .main_content
+              iframe(src='http://embed.verite.co/timeline/?source=0AiOdIrDgLpfvdGdfZFVpY0JxZ2JsenBoZzBZb3dBQXc&font=Bevan-PotanoSans&maptype=toner&lang=en&width=900&height=650', width='900', height='650', frameborder='0')
+              .blog_boxes
+                .container_posts_pieces
+                  .post_corner.post_top_left
+                    .post_token_left
+                  .post_topbottom.post_top_center
+                  .post_corner.post_top_right
+                    .post_token_right
+                  .post_sides.post_middle_left
+                  .post_center.post_content
+                    #post-1.post-1.post.type-post.status-publish.format-standard.hentry.category-uncategorized.entry
+                      .head_post
+                        h2.post_title
+                          Create unlimited layouts.
+                        span.comments_link
+                          -
+                      .entry_post
+                        p
+                          img.size-full.wp-image-327.alignleft(title='img3', src='server/img/features_3.jpg', alt='', width='200', height='140', style='border: 3px solid white; box-shadow: 0 0px 5px rgba(0, 0, 0, .5);')
+                          | With our framework, you can mix 7 different combinations of positions, and you will be able to create countless layouts with our dynamic sidebars generator, which can create as many sidebars (or widget areas) as you wish, and add to those areas as many boxes as you want (images, text, menus, galleries, contact forms, you name it), which gives you the option of creating countless layouts, with multiple columns and rows.
+                  .post_sides.post_middle_right
+                  .post_corner.post_bottom_left
+                  .post_topbottom.post_bottom_center
+                  .post_corner.post_bottom_right
                 //
-                   end boxes 
-        .span10
-          .global_wrapper.wrap_lay4
-            .wrapper_content
-              .lay_base.content_pattern
-              .bar_separate.footer_separate
-              .lay_base.content_shadow
-              #content
-                .main_content
-                  .blog_boxes
-                    .container_posts_pieces
-                      .post_corner.post_top_left
-                        .post_token_left
-                      .post_topbottom.post_top_center
-                      .post_corner.post_top_right
-                        .post_token_right
-                      .post_sides.post_middle_left
-                      .post_center.post_content
-                        #post-1.post-1.post.type-post.status-publish.format-standard.hentry.category-uncategorized.entry
-                          .head_post
-                            h2.post_title
-                              Create unlimited layouts.
-                            span.comments_link
-                              -
-                          .entry_post
-                            p
-                              img.size-full.wp-image-327.alignleft(title='img3', src='server/img/features_3.jpg', alt='', width='200', height='140', style='border: 3px solid white; box-shadow: 0 0px 5px rgba(0, 0, 0, .5);')
-                              | With our framework, you can mix 7 different combinations of positions, and you will be able to create countless layouts with our dynamic sidebars generator, which can create as many sidebars (or widget areas) as you wish, and add to those areas as many boxes as you want (images, text, menus, galleries, contact forms, you name it), which gives you the option of creating countless layouts, with multiple columns and rows.
-                      .post_sides.post_middle_right
-                      .post_corner.post_bottom_left
-                      .post_topbottom.post_bottom_center
-                      .post_corner.post_bottom_right
-                    //
-                       end container_posts_pieces 
-                    .post_token_bottom
-                  //
-                     end blog_boxes 
-                  .navigation
-                .clear
+                   end container_posts_pieces 
+                .post_token_bottom
+              //
+                 end blog_boxes 
+              .navigation
+            .clear
             .wrapper_footer
               .lay_base.footer_pattern
               .lay_base.footer_shadow
