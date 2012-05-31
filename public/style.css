@@ -29,7 +29,7 @@ div.anythingSlider .forward{top: 150px; right: -50px;}
 .container_menu ul li a{line-height: 48px; color: rgb(238, 190, 182); font-size: 14px; font-family: 'Trebuchet MS, Arial',Helvetica,sans;}
 .container_menu ul li.back .left{background-image: url(graphic_elements/menu/menu_035_current.png); height: 20px; margin-right: 10px;}
 .container_menu ul li.back{left: 361px; width: 123px; top: 15px; background-image: url(graphic_elements/menu/menu_035_current.png); height: 20px; overflow: hidden;}
-.search_area{background-image: url(graphic_elements/search/search_021.png); height: 16px; width: 237px; padding: 7px 0px 16px; margin: 20.5px 0pt 0pt;   }
+.search_area{background-image: url('search_052.png'); height: 16px; width: 237px; padding: 7px 0px 16px; margin: 20.5px 0pt 0pt;   }
 .search_area input[type="text"]{height: 16px; float: left; width: 180px; color: rgb(188, 188, 188);   }
 .search_area input[type="submit"]{height: 16px; float: left; width: 37px;   }
 
