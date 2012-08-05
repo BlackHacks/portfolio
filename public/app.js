@@ -11,8 +11,8 @@ $(window).load(function(){
 		App.HomeController = Em.Controller.extend();
 		App.HomeView = Em.View.extend({ templateName: 'home' });
 
-		App.TestController = Em.Controller.extend();
-		App.TestView = Em.View.extend({ templateName: 'test' });
+		App.MusicController = Em.Controller.extend();
+		App.MusicView = Em.View.extend({ templateName: 'Music' });
 
 		App.Router = Em.Router.extend({
 			enableLogging: true,
@@ -21,7 +21,7 @@ $(window).load(function(){
 			root: Em.Route.extend({
 				// EVENTS
 				gotoHome: Ember.Route.transitionTo('home'),
-				gotoTest: Ember.Route.transitionTo('test'),
+				gotoMusic: Ember.Route.transitionTo('Music'),
 
 				// STATES
 				home: Em.Route.extend({
@@ -30,10 +30,10 @@ $(window).load(function(){
 						router.get('applicationController').connectOutlet('home');
 					}
 				}),
-				test: Em.Route.extend({
-					route: '/test',
+				Music: Em.Route.extend({
+					route: '/Music',
 					connectOutlets: function (router, context) {
-						router.get('applicationController').connectOutlet('test');
+						router.get('applicationController').connectOutlet('Music');
 					}
 				})
 			})
