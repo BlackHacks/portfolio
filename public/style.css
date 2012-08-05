@@ -1,0 +1,24 @@
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+	padding-left: 28px;
+}
+
+li {
+	float: left;
+}
+
+ul a {
+	padding-right: 24px;
+	padding-left: 24px;
+	display: block;
+	text-decoration: none;
+	font-size: 21px;
+	color: #371C1C;
+}
+
+ul a:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+
+  <title>Piotr Yordanov</title>
+  <link rel="stylesheet" href="/index.css" type="text/css" />
+  <script type="text/javascript" src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+  <script type="text/javascript" src=
+  "http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0.beta6/handlebars.min.js">
+</script>
+  <script type="text/javascript" src=
+  "http://cloud.github.com/downloads/emberjs/ember.js/ember-latest.js">
+</script>
+  <script type="text/javascript" src="app.js">
+</script>
+</head>
+
+<body>
+  <div id="body_theme" style="font-family: 'News Cycle',sans-serif; font-size: 14px;"
+  class="body_theme">
+    <!--<end>fullheader_menu_bar </end>-->
+
+    <div style=
+    "background-image: url('clipart_046.png'); background-position: center top;" class=
+    "clipart">
+      <div style="background-image: url('shine_007.png');" class="lay_base header_shine">
+      </div>
+    </div>
+
+    <div style="background-color: transparent;" class="wrapper_header">
+      <div style="display: block; background-repeat: no-repeat no-repeat;" class=
+      "lay_base header_shadow"></div>
+
+      <div id="header" style="padding: 23px 0px;">
+        <div class="container_LogoSearch">
+          <a href="http://piotry.me" class="logo"><img src="logo_003.png" /></a>
+
+          <ul style="margin: 18px 10px 0px;" class="icon_socials">
+            <li style=
+            "background-image: url('setpack_social_031.png'); height: 44px; width: 45px; background-position: -45px center;"
+            class="ic_twitter"><a rel="" href="https://twitter.com/#!/yordaKhof" title=
+            "Follow us on Twitter"></a></li>
+
+            <li style=
+            "background-image: url('setpack_social_031.png'); height: 44px; width: 45px; background-position: -225px center;"
+            class="ic_linkedin"><a title="Linked-in" href=
+            "http://www.linkedin.com/pub/piotr-yordanov/26/5a4/207" rel=""></a></li>
+          </ul>
+        </div>
+        <!--<div style="background-image: url('search_026.png'); height: 22px; width: 228px; padding: 7px 0px 10px 7px; margin: 20.5px 0px 0px;" class="search_area"><form id="searchform" action="http://piotry.me" method="get" name="s"><input style="height: 22px; float: left; width: 176px; color: rgb(180, 180, 180);" name="s" value="Search..." onclick="this.value='';" type="text" class="s"><input value="" name="themedemo" type="hidden"><input id="searchsubmit" style="height: 22px; float: left; width: 23px;" value="" name="btn_search" type="submit"></form></div>-->
+
+        <div style=
+        "background-image: url('menu_086.png'); height: 57px; margin: 0px auto;" class=
+        "container_menu">
+          <div class="menu-wtg-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <div style=
+    "background-color: rgb(86, 86, 86); background-image: url('pattern_070.png'); display: block;"
+    class="global_wrapper wrap_lay5">
+      <div style="background-color: transparent; height: 450px" class="wrapper_content">
+        <script type="text/x-handlebars" data-template-name="application">
+<![CDATA[
+        {{view App.NavbarView controllerBinding="controller.controllers.navbarController"}}
+        ]]>
+        </script><script type="text/x-handlebars" data-template-name="navbar">
+<![CDATA[
+        <ul id="menu-wtg" class="menu"></ul><ul>
+        <li>{<a style='line-height: 48px; color: rgb(210, 207, 204); font-size: 14px; ', href="#" {{action gotoHome}}>Home</a>,</li>
+        <li><a style='line-height: 48px; color: rgb(210, 207, 204); font-size: 14px; ', href="#" {{action gotoTest}}>Test</a>}</li>
+        </ul>
+        ]]>
+        </script><script type="text/x-handlebars" data-template-name="home">
+<![CDATA[
+        <div style="background-color: rgb(86, 86, 86); background-image: url('pattern_070.png'); display: block;" class="global_wrapper wrap_lay5"><div style="background-color: transparent; height: 450px" class="wrapper_content"><h2>Welcome</h2></div></div>
+        ]]>
+        </script><script type="text/x-handlebars" data-template-name="test">
+        </script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

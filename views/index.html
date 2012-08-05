@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title> - jsFiddle demo by schawaska</title>
+
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0.beta6/handlebars.min.js"></script>
+
+		<script type='text/javascript' src="http://cloud.github.com/downloads/emberjs/ember.js/ember-latest.js"></script>
+		<script type='text/javascript' src="app.js"></script>
+
+	</head>
+	<body>
+		<script type="text/x-handlebars" data-template-name="application">
+			<h1>My Ember Application</h1>
+			{{view App.NavbarView controllerBinding="controller.controllers.navbarController"}}
+			<br /><hr />
+			<div class="content">
+				{{outlet}}
+			</div>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="navbar">
+			<ul>
+				<li><a href="#" {{action gotoHome}}>Home</a></li>
+				<li><a href="#" {{action gotoTest}}>Test</a></li>
+			</ul>
+		</script>
+
+
+		<script type="text/x-handlebars" data-template-name="home">
+			<h2>Welcome</h2>
+		</script>
+
+
+		<script type="text/x-handlebars" data-template-name="test">
+			<h1>Ember Community</h1>
+		</script>
+
+	</body>
+</html>
