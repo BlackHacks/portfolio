@@ -2,8 +2,8 @@
 // IT'S ALL JUST JUNK FOR OUR DOCS!
 // ++++++++++++++++++++++++++++++++++++++++++
 
-!function ($) {
 
+!function ($) {
   $(function(){
 
     // Disable certain links in docs
