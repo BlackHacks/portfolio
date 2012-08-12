@@ -5,7 +5,7 @@
 ul.polaroids { margin: 0 0 18px -30px; }
 ul.polaroids li { display: inline; }
 ul.polaroids a { background: #fff; display: inline; float: left; margin: 0 0 27px 30px; width: auto; padding: 10px 10px 15px; text-align: center; font-family: "Marker Felt", sans-serif; text-decoration: none; color: #333; font-size: 18px; -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); -webkit-transform: rotate(-2deg); -webkit-transition: -webkit-transform .15s linear; -moz-transform: rotate(-2deg); }
-ul.polaroids img { display: block; width: 190px; margin-bottom: 12px; }
+ul.polaroids img { display: block; margin-bottom: 12px; }
 ul.polaroids a:after { content: attr(title); }
 
 ul.polaroids li:nth-child(even) a { -webkit-transform: rotate(2deg);  -moz-transform: rotate(2deg); }
@@ -71,6 +71,23 @@ th, td {
 }
 
 /* end of github section */
+
+/* Music section */
+
+.youtube {
+	width: 128px;
+	height: 128px;
+	background: url(/images/youtube.png) bottom;
+}
+
+.soundLink {
+	width: 64px;
+	height: 64px;
+	background: url(/images/black_white_64.png) bottom;
+}
+.soundLink:hover {
+	background: url(/images/orange_white_64.png) bottom;
+}
 
 .nav-tabs > li, .nav-pills > li {
     float:none;

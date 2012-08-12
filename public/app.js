@@ -88,22 +88,10 @@ $(window).load(function(){
 		App.MusicMenuView = Em.View.extend({ templateName: 'music-menu' });
 
 		App.YoutubeController = Em.Controller.extend();
-		App.YoutubeView = Em.View.extend({
-			templateName: 'youtube',
-			didInsertElement: function() {
-				github();
-				masonry();
-			}
-		});
+		App.YoutubeView = Em.View.extend({ templateName: 'youtube' });
 
 		App.SoundCloudController = Em.Controller.extend();
-		App.SoundCloudView = Em.View.extend({
-			templateName: 'soundCloud',
-			didInsertElement: function() {
-				github();
-				masonry();
-			}
-		});
+		App.SoundCloudView = Em.View.extend({ templateName: 'soundCloud' });
 
 		App.Router = Em.Router.extend({
 			enableLogging: true,
@@ -111,7 +99,7 @@ $(window).load(function(){
 
 			root: Em.Route.extend({
 				gotoHome: Ember.Route.transitionTo('home'),
-				gotoMusic: Ember.Route.transitionTo('music'),
+				gotoMusic: Ember.Route.transitionTo('music.music'),
 				gotoPortfolio: Ember.Route.transitionTo('portfolio'),
 				gotoAbout: Ember.Route.transitionTo('about'),
 
@@ -140,12 +128,8 @@ $(window).load(function(){
 					}
 				}),
 				music: Em.Route.extend({
-					// SETUP
-					route: '/Music',
-					connectOutlets: function (router, context) {
-						router.get('applicationController').connectOutlet('music');
-					},
 					// EVENTS
+					gotoMain: Ember.Route.transitionTo('music'),
 					gotoSoundCloud: Ember.Route.transitionTo('soundCloud'),
 					gotoYoutube: Ember.Route.transitionTo('youtube'),
 

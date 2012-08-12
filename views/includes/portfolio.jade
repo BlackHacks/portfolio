@@ -12,22 +12,30 @@ script(type='text/x-handlebars', data-template-name='portfolio')
   .row-fluid
     .span1
     .span7
-      ul.polaroids
-          li
-            a(href='http://www.flickr.com/photos/zurbinc/3971679981/', title='Banksim')
-              img(src='/images/bank.png', alt='Banksim')
-          li
-            a(href='http://www.flickr.com/photos/zurbinc/3985295842/', title='Nodejs-Forms')
-              img(src='/images/forms.png', alt='Nodejs-Forms')
-          li
-            a(href='http://www.flickr.com/photos/zurbinc/3993123611/', title='Nodejs-helpers')
-              img(src='/images/nodejs-helpers.png', alt='Nodejs-helpers')
-          li
-            a(href='http://www.flickr.com/photos/zurbinc/4001991326/', title='Server scripts')
-              img(src='/images/server-scripts.png', alt='Server scripts')
-          li
-            a(href='http://www.flickr.com/photos/zurbinc/4001992350/', title='Emberjs Samples')
-              img(src='/images/emberjs-samples.png', alt='Emberjs Samples')
+      .container
+        h1 Websites
+        br
+        ul.polaroids
+            li
+              a(href='http://bank.piotry.me/', title='Banksim')
+                img(src='/images/bank.png', alt='Banksim')
+            li
+              a(href='http://forms.piotry.me/', title='Nodejs-Forms')
+                img(src='/images/forms.png', alt='Nodejs-Forms')
+
+      .container
+        h1 Libraries
+        br
+        ul.polaroids
+            li
+              a(href='https://github.com/tUrG0n/nodejs-helpers', title='Nodejs-helpers')
+                img(src='/images/nodejs-helpers.png', alt='Nodejs-helpers')
+            li
+              a(href='https://github.com/tUrG0n/server-scripts', title='Server scripts')
+                img(src='/images/server-scripts.png', alt='Server scripts')
+            li
+              a(href='https://github.com/tUrG0n/emberjs-samples', title='Emberjs Samples')
+                img(src='/images/emberjs-samples.png', alt='Emberjs Samples')
     .span4
       #git
         h1 Fork me!

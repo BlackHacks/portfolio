@@ -1,6 +1,3 @@
-script(type='text/x-handlebars', data-template-name='Music')
-  {{view App.MusicMenuView}}
-
 script(type='text/x-handlebars', data-template-name='music-menu')
   .navbar.navbar-fixed-top
     nav
@@ -12,28 +9,68 @@ script(type='text/x-handlebars', data-template-name='music-menu')
         <li><a href="#" {{action gotoPortfolio}} >Portfolio</a></li>
         <li><a href="#" {{action gotoAbout}} >About</a></li>
 
+
+script(type='text/x-handlebars', data-template-name='Music')
+  {{view App.MusicMenuView}}
   .container
     header#overview.jumbotron.head
       h1 Music I produce
 
   .container.show-grid
     ul.nav.nav-tabs
+      <li class="active"><a href="#" {{action gotoMain}}>Main</a></li>
       <li><a href="#" {{action gotoSoundCloud}}>Soundcloud</a></li>
       <li><a href="#" {{action gotoYoutube}}>Youtube</a></li>
       li
         a.nav-about(href='/music') Timeline
+  .row-fluid
+    .span3
+    .span6
+      h1 Overview
+      p I've been playing the piano since the age of 5. My favorite play style is jazz.
+      p My recordings are online! Check them out ^^
+      br
+      ul.polaroids
+        <li> <a href="#" {{action gotoSoundCloud}}><img class="soundLink"></a> </li>
+        <li> <a href="#" {{action gotoYoutube}}><img class="youtube"></a> </li>
+        <li> <a href="/music" ><img src="/images/timeline.png">Timeline </a></li>
+
+      
+    .span3
+
 
 script(type='text/x-handlebars', data-template-name='youtube')
   {{view App.MusicMenuView}}
   .container
-    .youtube
-      <iframe width="420" height="315" src="http://www.youtube.com/embed/HOIZ4xra2eA" frameborder="0" allowfullscreen></iframe>
-      <iframe width="420" height="315" src="http://www.youtube.com/embed/49WVV9JU-Ec" frameborder="0" allowfullscreen></iframe>
-      <iframe width="520" height="415" src="http://www.youtube.com/embed/0_UXTwJ2X48" frameborder="0" allowfullscreen></iframe>
+    header#overview.jumbotron.head
+      h1 Music I produce
+
+  .container.show-grid
+    ul.nav.nav-tabs
+      <li><a href="#" {{action gotoMain}}>Main</a></li>
+      <li><a href="#" {{action gotoSoundCloud}}>Soundcloud</a></li>
+      <li class="active"><a href="#" {{action gotoYoutube}}>Youtube</a></li>
+      li
+        a.nav-about(href='/music') Timeline
+  .container
+    <iframe width="420" height="315" src="http://www.youtube.com/embed/HOIZ4xra2eA" frameborder="0" allowfullscreen></iframe>
+    <iframe width="420" height="315" src="http://www.youtube.com/embed/49WVV9JU-Ec" frameborder="0" allowfullscreen></iframe>
+    <iframe width="520" height="415" src="http://www.youtube.com/embed/0_UXTwJ2X48" frameborder="0" allowfullscreen></iframe>
 
 
 script(type='text/x-handlebars', data-template-name='soundCloud')
   {{view App.MusicMenuView}}
+  .container
+    header#overview.jumbotron.head
+      h1 Music I produce
+
+  .container.show-grid
+    ul.nav.nav-tabs
+      <li><a href="#" {{action gotoMain}}>Main</a></li>
+      <li class="active"><a href="#" {{action gotoSoundCloud}}>Soundcloud</a></li>
+      <li><a href="#" {{action gotoYoutube}}>Youtube</a></li>
+      li
+        a.nav-about(href='/music') Timeline
   .show-grid
     .row-fluid.show-grid
       .span1
