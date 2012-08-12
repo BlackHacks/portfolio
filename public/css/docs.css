@@ -26,6 +26,9 @@ ol.code code { background: none; }
 
 
 /* Twitter section */
+#twitter h1 {
+	text-align:center;
+}
 #twitter {
 	position: fixed;
 	padding: 5px;
@@ -38,7 +41,6 @@ ol.code code { background: none; }
 	border-radius: 8px;
 
 	width: 300px;
-	text-align:center;
 }
 
 li {
