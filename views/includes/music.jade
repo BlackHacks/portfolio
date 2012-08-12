@@ -1,0 +1,44 @@
+script(type='text/x-handlebars', data-template-name='Music')
+  {{view App.MusicMenuView}}
+
+script(type='text/x-handlebars', data-template-name='music-menu')
+  .navbar.navbar-fixed-top
+    nav
+      ul.clearfix
+        <li><a href="#" {{action gotoHome}}>Home</a></li>
+        li
+          a.nav-blog(href="http://blog.piotry.me") Blog
+        <li class="active"><a href="#" {{action gotoMusic}} >Music</a></li>
+        <li><a href="#" {{action gotoPortfolio}} >Portfolio</a></li>
+        <li><a href="#" {{action gotoAbout}} >About</a></li>
+
+  .container
+    header#overview.jumbotron.head
+      h1 Music I produce
+
+  .container.show-grid
+    ul.nav.nav-tabs
+      <li><a href="#" {{action gotoSoundCloud}}>Soundcloud</a></li>
+      <li><a href="#" {{action gotoYoutube}}>Youtube</a></li>
+      li
+        a.nav-about(href='/music') Timeline
+
+script(type='text/x-handlebars', data-template-name='youtube')
+  {{view App.MusicMenuView}}
+  .container
+    .youtube
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/HOIZ4xra2eA" frameborder="0" allowfullscreen></iframe>
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/49WVV9JU-Ec" frameborder="0" allowfullscreen></iframe>
+      <iframe width="520" height="415" src="http://www.youtube.com/embed/0_UXTwJ2X48" frameborder="0" allowfullscreen></iframe>
+
+
+script(type='text/x-handlebars', data-template-name='soundCloud')
+  {{view App.MusicMenuView}}
+  .show-grid
+    .row-fluid.show-grid
+      .span1
+      .span5
+        <iframe width="100%" height="330" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2150116&show_artwork=true"></iframe>
+      .span5
+        <iframe width="100%" height="320" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2125686&show_artwork=true"></iframe>
+      .span1

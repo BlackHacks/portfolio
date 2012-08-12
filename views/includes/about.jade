@@ -1,0 +1,14 @@
+script(type='text/x-handlebars', data-template-name='about')
+  .navbar.navbar-fixed-top
+    nav
+      ul.clearfix
+        <li><a href="#" {{action gotoHome}}>Home</a></li>
+        li
+          a.nav-blog(href="http://blog.piotry.me") Blog
+        <li><a href="#" {{action gotoMusic}} >Music</a></li>
+        <li><a href="#" {{action gotoPortfolio}} >Portfolio</a></li>
+        <li class="active"><a href="#" {{action gotoAbout}} >About</a></li>
+  .container
+    header#overview.jumbotron.head
+      h1 Under construction
+
