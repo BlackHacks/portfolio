@@ -140,6 +140,9 @@ hr.soften {
 .jumbotron {
   position: relative;
 }
+.jumbotron h2 {
+	text-align: center;
+}
 .jumbotron h1 {
   margin-bottom: 9px;
   margin-top: -30px;

@@ -44,6 +44,7 @@ $(window).load(function(){
 			templateName: 'home',
 			didInsertElement: function() {
 				tweet();
+				o.init();
 			}
 		});
 
