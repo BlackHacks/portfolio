@@ -1,3 +1,24 @@
+function masonry() {
+	$('#container').masonry({
+		itemSelector: '.box',
+		columnWidth: function( containerWidth ) {
+			return containerWidth / 3;
+		}
+	});
+}
+function github(){
+	$('#github').gitview({
+		user       : 'tUrG0n',      // any github username
+		count      : 3,              // (optional) number of repos per widget page
+		showForks  : true,           // (optional) show forked repos, true by default
+		width      : '250px',        // (optional) width of widget / repos
+		frameColor : 'white',         // (optional) frame background color
+		compact    : false,          // (optional) compact mode or full mode?
+		noFrame    : false,          // (optional) no fancy widget frame, just repositories
+		cache      : true            // (optional) turn local caching on or off, on by default
+	});
+}
+
 function tweet(){
 	$('#tweets').jTweetsAnywhere({
 			username: 'yordaKhof',
@@ -52,7 +73,13 @@ $(window).load(function(){
 		App.AboutView = Em.View.extend({ templateName: 'about' });
 
 		App.PortfolioController = Em.Controller.extend();
-		App.PortfolioView = Em.View.extend({ templateName: 'portfolio' });
+		App.PortfolioView = Em.View.extend({
+			templateName: 'portfolio',
+			didInsertElement: function() {
+				github();
+				masonry();
+			}
+		});
 
 		App.MusicController = Em.Controller.extend();
 		App.MusicView = Em.View.extend({ templateName: 'Music' });
@@ -61,10 +88,22 @@ $(window).load(function(){
 		App.MusicMenuView = Em.View.extend({ templateName: 'music-menu' });
 
 		App.YoutubeController = Em.Controller.extend();
-		App.YoutubeView = Em.View.extend({ templateName: 'youtube' });
+		App.YoutubeView = Em.View.extend({
+			templateName: 'youtube',
+			didInsertElement: function() {
+				github();
+				masonry();
+			}
+		});
 
 		App.SoundCloudController = Em.Controller.extend();
-		App.SoundCloudView = Em.View.extend({ templateName: 'soundCloud' });
+		App.SoundCloudView = Em.View.extend({
+			templateName: 'soundCloud',
+			didInsertElement: function() {
+				github();
+				masonry();
+			}
+		});
 
 		App.Router = Em.Router.extend({
 			enableLogging: true,

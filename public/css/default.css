@@ -1,11 +1,6 @@
-@import url("reset.css");
 
 /* ------ layout
 -----------------------------------------------*/
-.twitter h1{
-text-align:center;
-}
-
 
 .legend {
 float:left;
@@ -56,10 +51,6 @@ background:#BEDBE9;
 
 .skills .sql {
 background:#EDEBEE;
-}
-
-#diagram {
-height:600px;
 }
 
 .get {

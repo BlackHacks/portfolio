@@ -12,37 +12,37 @@ script(type='text/x-handlebars', data-template-name='home')
     header#overview.jumbotron.head
       h2 Hi! I'm Piotr
 
-  .container.show-grid
-    .row-fluid.show-grid
-      .span2
-        .legend
-            h1 My skills:
-            .skills
-              ul
-                li.coffee Coffeescript
-                li.node Node.js
-                li.mongo Mongodb
-                li.zic Music
-      .span6
-        #diagram
-        .get
-          .arc
-            span.text Music
-            input.percent(type='hidden', value='93')
-            input.color(type='hidden', value='#BEDBE9')
-          .arc
-              span.text Coffeescript
-              input.percent(type='hidden', value='85')
-              input.color(type='hidden', value='#97BE0D')
-          .arc
-            span.text Node.js
-            input.percent(type='hidden', value='70')
-            input.color(type='hidden', value='#D84F5F')
-          .arc
-            span.text Mongodb
-            input.percent(type='hidden', value='40')
-            input.color(type='hidden', value='#88B8E6')
-      .span4
-        .twitter
-          h1 Latest tweets!
-          #tweets
+  .row-fluid
+    .span2
+    .span2
+      .legend
+          h1 My skills:
+          .skills
+            ul
+              li.coffee Coffeescript
+              li.node Node.js
+              li.mongo Mongodb
+              li.zic Music
+    .span5
+      #diagram
+      .get
+        .arc
+          span.text Music
+          input.percent(type='hidden', value='93')
+          input.color(type='hidden', value='#BEDBE9')
+        .arc
+            span.text Coffeescript
+            input.percent(type='hidden', value='85')
+            input.color(type='hidden', value='#97BE0D')
+        .arc
+          span.text Node.js
+          input.percent(type='hidden', value='70')
+          input.color(type='hidden', value='#D84F5F')
+        .arc
+          span.text Mongodb
+          input.percent(type='hidden', value='40')
+          input.color(type='hidden', value='#88B8E6')
+    .span3
+      #twitter
+        h1 Tweets
+        #tweets
