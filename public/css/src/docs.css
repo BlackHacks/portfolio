@@ -30,7 +30,6 @@ ol.code code { background: none; }
 	text-align:center;
 }
 #twitter {
-	position: fixed;
 	padding: 5px;
 	background-color: #ECECEC;
 	-moz-box-shadow: 0px 0px 4px #999;
@@ -54,7 +53,6 @@ ul, ol{
 /* Use this for github */
 
 #git {
-	position: fixed;
 	padding: 20px;
 	background-color: #ECECEC;
 	-moz-box-shadow: 0px 0px 4px #999;
