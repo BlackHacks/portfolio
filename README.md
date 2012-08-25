@@ -48,12 +48,12 @@ __Why?__
 
 Here's what I use when I develop apps including this one:
 
-  - vim.
+  - [vim](http://www.vim.org/) ([my .vim](https://github.com/tUrG0n/dot-files/tree/master/vim)
   - git and especially [git-flow](https://github.com/nvie/gitflow).
   - [prezto](https://github.com/sorin-ionescu/prezto), an oh-my-zsh refactoring that I personnaly find more robust and neat.
   - [skwp/dotfiles](https://github.com/skwp/dotfiles), that are awesome though lack some node support. ([Pull requests](https://github.com/tUrG0n/dotfiles) on the way ^^ )
-  - midnight commander (mc)
-  - tmux
+  - midnight commander ([mc](http://en.wikipedia.org/wiki/Midnight_Commander)) ([my .mc](https://github.com/tUrG0n/dot-files/tree/master/mc))
+  - [tmux](http://tmux.sourceforge.net/) ([my .tmux](https://github.com/tUrG0n/dot-files/tree/master/tmux))
 
 ----
 
@@ -62,8 +62,8 @@ Here's what I use when I develop apps including this one:
 I am using the following external libraries:
 
   - [gitview](https://github.com/bouchon/Gitview)
-	- [jTweetsAnywhere](http://thomasbillenstein.com/jTweetsAnywhere/)
-	- [The Raphael Animation](http://clipboard.com/clip/LQbkUfUR5J0mc5QxZaeGpnNmIWduiXQ6mTye)
+  - [jTweetsAnywhere](http://thomasbillenstein.com/jTweetsAnywhere/)
+  - [The Raphael Animation](http://clipboard.com/clip/LQbkUfUR5J0mc5QxZaeGpnNmIWduiXQ6mTye)
 
 Articles I relied on:
   - [Polarized by ZURB](http://clipboard.com/clip/LQbkeop__JaXF21fiJs1ZJkAmT74HRGiI6ae)
