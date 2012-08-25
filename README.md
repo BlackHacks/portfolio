@@ -2,6 +2,19 @@ This is the source code for my [personal website](http://piotry.me).
 
 ----
 
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Why build one?](#why-build-one?)
+- [Why Open source?](#why-open-source?)
+- [The tech goodies](#the-tech-goodies)
+	- [Backend Stack](#backend-stack)
+	- [Frontend Stack](#frontend-stack)
+- [Tools](#tools)
+- [Acknowledgments](#acknowledgments)
+- [LICENSE](#license)
+
+----
+
 # Why build one?
 
 Cuz it's fun, don't you think? Besides, I learned a ton of new technologies!
@@ -48,7 +61,7 @@ __Why?__
 
 Here's what I use when I develop apps including this one:
 
-  - [vim](http://www.vim.org/) ([my .vim](https://github.com/tUrG0n/dot-files/tree/master/vim)
+  - [vim](http://www.vim.org/) ([my .vim](https://github.com/tUrG0n/dot-files/tree/master/vim))
   - git and especially [git-flow](https://github.com/nvie/gitflow).
   - [prezto](https://github.com/sorin-ionescu/prezto), an oh-my-zsh refactoring that I personnaly find more robust and neat.
   - [skwp/dotfiles](https://github.com/skwp/dotfiles), that are awesome though lack some node support. ([Pull requests](https://github.com/tUrG0n/dotfiles) on the way ^^ )
