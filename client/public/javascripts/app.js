@@ -253,7 +253,10 @@ window.require.define({"js/app": function(exports, require, module) {
   App.MusicController = Em.Controller.extend();
 
   App.MusicView = Em.View.extend({
-    templateName: "Music"
+    templateName: "Music",
+    didInsertElement: function() {
+      return mixpanel.track("Music");
+    }
   });
 
   App.MusicMenuController = Em.Controller.extend();

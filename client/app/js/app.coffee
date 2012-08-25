@@ -76,7 +76,11 @@ App.PortfolioView = Em.View.extend(
     masonry()
 )
 App.MusicController = Em.Controller.extend()
-App.MusicView = Em.View.extend(templateName: "Music")
+App.MusicView = Em.View.extend(
+  templateName: "Music"
+  didInsertElement: ->
+    mixpanel.track("Music")
+)
 App.MusicMenuController = Em.Controller.extend()
 App.MusicMenuView = Em.View.extend(templateName: "music-menu")
 App.YoutubeController = Em.Controller.extend()
