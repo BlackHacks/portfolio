@@ -190,11 +190,8 @@ window.require.define({"js/app": function(exports, require, module) {
   };
 
   tweet = function() {
+    mixpanel.people.identify("12148");
     console.log(mixpanel);
-    mixpanel.people.set({
-      age: 25,
-      gender: "female"
-    });
     return $("#tweets").jTweetsAnywhere({
       username: "yordaKhof",
       count: 5,

@@ -34,10 +34,9 @@ github = ->
     cache: true # (optional) turn local caching on or off, on by default
 
 tweet = ->
+
+  mixpanel.people.identify("12148")
   console.log mixpanel
-  mixpanel.people.set
-    age: 25
-    gender: "female"
   $("#tweets").jTweetsAnywhere
     username: "yordaKhof"
     count: 5
