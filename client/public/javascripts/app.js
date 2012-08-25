@@ -227,10 +227,7 @@ window.require.define({"js/app": function(exports, require, module) {
   App.HomeView = Em.View.extend({
     templateName: "home",
     didInsertElement: function() {
-      mixpanel.people.identify("12148");
-      mixpanel.people.set({
-        page: "Home"
-      });
+      mixpanel.track("Home");
       tweet();
       return o.init();
     }
@@ -247,10 +244,7 @@ window.require.define({"js/app": function(exports, require, module) {
   App.PortfolioView = Em.View.extend({
     templateName: "portfolio",
     didInsertElement: function() {
-      mixpanel.people.identify("12148");
-      mixpanel.people.set({
-        page: "Portfolio"
-      });
+      mixpanel.track("Portfolio");
       github();
       return masonry();
     }

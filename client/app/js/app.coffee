@@ -61,9 +61,7 @@ App.HomeController = Em.Controller.extend()
 App.HomeView = Em.View.extend(
   templateName: "home"
   didInsertElement: ->
-    mixpanel.people.identify("12148")
-    mixpanel.people.set
-      page: "Home"
+    mixpanel.track("Home");
     tweet()
     o.init()
 )
@@ -73,9 +71,7 @@ App.PortfolioController = Em.Controller.extend()
 App.PortfolioView = Em.View.extend(
   templateName: "portfolio"
   didInsertElement: ->
-    mixpanel.people.identify("12148")
-    mixpanel.people.set
-      page: "Portfolio"
+    mixpanel.track("Portfolio");
     github()
     masonry()
 )
