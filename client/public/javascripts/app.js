@@ -262,7 +262,10 @@ window.require.define({"js/app": function(exports, require, module) {
   App.MusicMenuController = Em.Controller.extend();
 
   App.MusicMenuView = Em.View.extend({
-    templateName: "music-menu"
+    templateName: "music-menu",
+    didInsertElement: function() {
+      return mixpanel.track("Music-menu");
+    }
   });
 
   App.YoutubeController = Em.Controller.extend();

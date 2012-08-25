@@ -82,7 +82,11 @@ App.MusicView = Em.View.extend(
     mixpanel.track("Music")
 )
 App.MusicMenuController = Em.Controller.extend()
-App.MusicMenuView = Em.View.extend(templateName: "music-menu")
+App.MusicMenuView = Em.View.extend(
+  templateName: "music-menu"
+  didInsertElement: ->
+    mixpanel.track("Music-menu")
+)
 App.YoutubeController = Em.Controller.extend()
 App.YoutubeView = Em.View.extend(templateName: "youtube")
 App.SoundCloudController = Em.Controller.extend()
