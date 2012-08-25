@@ -269,6 +269,10 @@ window.require.define({"js/app": function(exports, require, module) {
     templateName: "home",
     didInsertElement: function() {
       var o;
+      mixpanel.people.set({
+        age: 17,
+        gender: "male"
+      });
       tweet();
       o = require('js/init');
       return o.init();
