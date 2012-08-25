@@ -34,9 +34,6 @@ github = ->
     cache: true # (optional) turn local caching on or off, on by default
 
 tweet = ->
-
-  mixpanel.people.identify("12148")
-  console.log mixpanel
   $("#tweets").jTweetsAnywhere
     username: "yordaKhof"
     count: 5
@@ -64,6 +61,9 @@ App.HomeController = Em.Controller.extend()
 App.HomeView = Em.View.extend(
   templateName: "home"
   didInsertElement: ->
+    mixpanel.people.identify("12148")
+    mixpanel.people.set
+      page: "Home"
     tweet()
     o.init()
 )
@@ -73,6 +73,9 @@ App.PortfolioController = Em.Controller.extend()
 App.PortfolioView = Em.View.extend(
   templateName: "portfolio"
   didInsertElement: ->
+    mixpanel.people.identify("12148")
+    mixpanel.people.set
+      page: "Portfolio"
     github()
     masonry()
 )

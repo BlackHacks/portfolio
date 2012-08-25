@@ -190,8 +190,6 @@ window.require.define({"js/app": function(exports, require, module) {
   };
 
   tweet = function() {
-    mixpanel.people.identify("12148");
-    console.log(mixpanel);
     return $("#tweets").jTweetsAnywhere({
       username: "yordaKhof",
       count: 5,
@@ -229,6 +227,10 @@ window.require.define({"js/app": function(exports, require, module) {
   App.HomeView = Em.View.extend({
     templateName: "home",
     didInsertElement: function() {
+      mixpanel.people.identify("12148");
+      mixpanel.people.set({
+        page: "Home"
+      });
       tweet();
       return o.init();
     }
@@ -245,6 +247,10 @@ window.require.define({"js/app": function(exports, require, module) {
   App.PortfolioView = Em.View.extend({
     templateName: "portfolio",
     didInsertElement: function() {
+      mixpanel.people.identify("12148");
+      mixpanel.people.set({
+        page: "Portfolio"
+      });
       github();
       return masonry();
     }
