@@ -15,6 +15,7 @@ woopraReady = (tracker) ->
   ssc = document.getElementsByTagName("script")[0]
   ssc.parentNode.insertBefore wsc, ssc
 )()
+
 ((c, a) ->
   b = undefined
   d = undefined
@@ -48,4 +49,4 @@ woopraReady = (tracker) ->
   a.__SV = 1.1
   window.mixpanel = a
 ) document, window.mixpanel or []
-mixpanel.init "YOUR_TOKEN"
+mixpanel.init "8c3bd3239141b0bc4ce867b77bc7b240"

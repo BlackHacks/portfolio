@@ -139,12 +139,76 @@ window.require.define({"js/analytics": function(exports, require, module) {
     return window.mixpanel = a;
   })(document, window.mixpanel || []);
 
-  mixpanel.init("YOUR_TOKEN");
+  mixpanel.init("8c3bd3239141b0bc4ce867b77bc7b240");
   
 }});
 
 window.require.define({"js/app": function(exports, require, module) {
-  var github, masonry, tweet;
+  var github, masonry, tweet, woopraReady;
+
+  woopraReady = function(tracker) {
+    tracker.setDomain("piotry.me");
+    tracker.setIdleTimeout(300000);
+    tracker.trackPageview({
+      type: "pageview",
+      url: window.location.pathname + window.location.search,
+      title: document.title
+    });
+    return false;
+  };
+
+  (function() {
+    var ssc, wsc;
+    wsc = document.createElement("script");
+    wsc.src = document.location.protocol + "//static.woopra.com/js/woopra.js";
+    wsc.type = "text/javascript";
+    wsc.async = true;
+    ssc = document.getElementsByTagName("script")[0];
+    return ssc.parentNode.insertBefore(wsc, ssc);
+  })();
+
+  (function(c, a) {
+    var b, d, e, h;
+    b = void 0;
+    d = void 0;
+    h = void 0;
+    e = void 0;
+    b = c.createElement("script");
+    b.type = "text/javascript";
+    b.async = !0;
+    b.src = ("https:" === c.location.protocol ? "https:" : "http:") + "//cdn.mxpnl.com/libs/mixpanel-2.1.min.js";
+    d = c.getElementsByTagName("script")[0];
+    d.parentNode.insertBefore(b, d);
+    a._i = [];
+    a.init = function(b, c, f) {
+      var g;
+      d = function(a, b) {
+        c = b.split(".");
+        2 === c.length && (a = a[c[0]], b = c[1]);
+        return a[b] = function() {
+          return a.push([b].concat(Array.prototype.slice.call(arguments_, 0)));
+        };
+      };
+      g = a;
+      if ("undefined" !== typeof f) {
+        g = a[f] = [];
+      } else {
+        f = "mixpanel";
+      }
+      g.people = g.people || [];
+      h = ["disable", "track", "track_pageview", "track_links", "track_forms", "register", "register_once", "unregister", "identify", "name_tag", "set_config", "people.identify", "people.set", "people.increment"];
+      e = 0;
+      while (e < h.length) {
+        d(g, h[e]);
+        e++;
+      }
+      return a._i.push([b, c, f]);
+    };
+    a.__SV = 1.1;
+    return window.mixpanel = a;
+  })(document, window.mixpanel || []);
+
+  mixpanel.init("8c3bd3239141b0bc4ce867b77bc7b240");
 
   masonry = function() {
     return $("#container").masonry({
@@ -205,6 +269,11 @@ window.require.define({"js/app": function(exports, require, module) {
     templateName: "home",
     didInsertElement: function() {
       var o;
+      mixpanel.people.set({
+        age: 17,
+        gender: "male",
+        referrer: document.referrer
+      });
       tweet();
       o = require('js/init');
       return o.init();
