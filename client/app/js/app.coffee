@@ -61,7 +61,7 @@ App.HomeController = Em.Controller.extend()
 App.HomeView = Em.View.extend(
   templateName: "home"
   didInsertElement: ->
-    mixpanel.track("Home");
+    mixpanel.track("Home")
     tweet()
     o.init()
 )
@@ -71,7 +71,7 @@ App.PortfolioController = Em.Controller.extend()
 App.PortfolioView = Em.View.extend(
   templateName: "portfolio"
   didInsertElement: ->
-    mixpanel.track("Portfolio");
+    mixpanel.track("Portfolio")
     github()
     masonry()
 )
