@@ -94,10 +94,6 @@ App.HomeController = Em.Controller.extend()
 App.HomeView = Em.View.extend(
   templateName: "home"
   didInsertElement: ->
-    mixpanel.people.set
-      age: 17
-      gender: "male"
-      referrer: document.referrer
     tweet()
     o = require('js/init')
     o.init()
