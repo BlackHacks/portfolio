@@ -20,9 +20,6 @@ app.configure "development", ->
 app.get "/", (req, res) ->
   res.render "index",
     title: "Piotr Yordanov"
-app.get "/resume", (req, res) ->
-  res.render "resume",
-    title: "Piotr Yordanov"
 
 app.get "/music", (req, res) ->
   res.render "music",
