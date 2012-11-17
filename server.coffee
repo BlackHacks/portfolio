@@ -25,5 +25,10 @@ app.get "/music", (req, res) ->
   res.render "music",
     title: "Piotr Yordanov"
 
+app.get "/new", (req, res) ->
+  res.render "new",
+    title: "Piotr Yordanov"
+    env: "production"
+
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")
