@@ -11,7 +11,7 @@ body a:hover {
   color: #5f5feb;
 }
 #container {
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.9);
   box-shadow: 0 2px 3px rgba(0,0,0,0.3);
   padding: 15px;
   width: 85%;
@@ -695,7 +695,7 @@ ul.polaroids li a:hover {
 #header {
   margin-top: 20px;
   position: relative;
-  height: 85px;
+  height: 80px;
 }
 #header .logo {
   position: absolute;
