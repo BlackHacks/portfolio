@@ -19,6 +19,7 @@ app.configure "development", ->
 
 app.get "/", (req, res) ->
   res.render "new",
+    env: "production"
     title: "Piotr Yordanov"
 
 app.get "/music", (req, res) ->
