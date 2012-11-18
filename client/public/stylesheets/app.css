@@ -761,9 +761,9 @@ ul.polaroids li a:hover {
 #main .row-fluid {
   line-height: 28px;
 }
-#main .row-fluid .bio {
-  padding-right: 20px;
-  border-right: 1px solid rgba(0,0,0,0.1);
+#main .row-fluid .span4 {
+  padding-left: 1.5%;
+  border-left: 1px solid rgba(0,0,0,0.03);
 }
 #main .row-fluid .me {
   -webkit-border-radius: 3px;
@@ -841,7 +841,6 @@ ul.polaroids li a:hover {
 #main .row-fluid #twitter {
   margin-top: 35px;
   font-size: 15px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.19);
   border-radius: 8px;
 }
 #main .row-fluid #twitter h2 {
