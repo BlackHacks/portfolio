@@ -2,8 +2,8 @@
 
 #header
   position: relative
-  height: 75px
-  .logo 
+  height: 85px
+  .logo
     position: absolute
     margin-left: 20px
     width: 100px
@@ -16,3 +16,20 @@
       font-size: 20px
       font-weight: italic
       color: gray
+    .menu
+      li
+        width: 20%
+        text-align: center
+        display: inline-block
+        .link
+          text-decoration: none
+          color: gray
+          .icon, .text
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+            height: 25px
+        .link:hover
+          .icon, .text
+            color: orange

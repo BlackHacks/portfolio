@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'navigation';
+	src:url('fonts/navigation.eot');
+	src:url('fonts/navigation.eot?#iefix') format('embedded-opentype'),
+		url('fonts/navigation.svg#navigation') format('svg'),
+		url('fonts/navigation.woff') format('woff'),
+		url('fonts/navigation.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'navigation';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="nav-icon-"]:before, [class*=" nav-icon-"]:before {
+	font-family: 'navigation';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.nav-icon-wrench:before {
+	content: "\e000";
+}
+.nav-icon-address-book:before {
+	content: "\e001";
+}
+.nav-icon-user:before {
+	content: "\e002";
+}
+.nav-icon-piano:before {
+	content: "\e003";
+}
