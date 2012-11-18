@@ -91,6 +91,29 @@ window.require.define({"application": function(exports, require, module) {
 
     }
 
+    Application.prototype.twitter = function() {
+      return $("#tweets").jTweetsAnywhere({
+        username: "yordaKhof",
+        count: 2,
+        showTweetFeed: {
+          showProfileImages: true,
+          showUserScreenNames: true,
+          showUserFullNames: true,
+          showActionReply: true,
+          showActionRetweet: true,
+          showActionFavorite: true
+        },
+        tweetTimestampDecorator: function(tweet, options) {
+          var date, dateString, html, screenName;
+          screenName = (tweet.user ? tweet.user.screen_name : false || tweet.from_user);
+          date = new Date(formatDate(tweet.created_at));
+          dateString = date.getHours() + ":" + (date.getMinutes() < 10 ? "0" : "") + date.getMinutes() + " " + (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
+          html = "<span class=\"jta-tweet-timestamp\"> \"" + "<a class=\"jta-tweet-timestamp-link\" href=\"http://twitter.com/" + screenName + "/status/" + tweet.id + "\">" + dateString + "</a></span>";
+          return html;
+        }
+      });
+    };
+
     Application.prototype.render = function() {
       return mainView.render();
     };
@@ -100,6 +123,7 @@ window.require.define({"application": function(exports, require, module) {
       header = new HeaderView();
       main = new MainView();
       o.init();
+      this.twitter();
       return cb();
     };
 
@@ -121,7 +145,7 @@ window.require.define({"diagram": function(exports, require, module) {
     },
     diagram: function() {
       var defaultText, r, rad, speed, title;
-      r = Raphael("diagram", 400, 400);
+      r = Raphael("diagram", 450, 450);
       rad = 73;
       defaultText = "Skills";
       speed = 250;
@@ -626,7 +650,7 @@ window.require.define({"views/templates/header": function(exports, require, modu
   var buf = [];
   with (locals || {}) {
   var interp;
-  buf.push('<div class="logo"><img src="/images/P.Y.png"/></div><div class="row-fluid"><div class="span2"></div><div class="span3"><p>Piotr Yordanov ---</p><p>Hacker and musician</p></div></div>');
+  buf.push('<div class="logo"><img src="/images/P.Y.png"/></div><div class="row-fluid"><div class="span2"></div><div class="span4"><p>Piotr Yordanov ---</p><p>Entrepreneur, Hacker and musician</p></div></div>');
   }
   return buf.join("");
   };
@@ -638,7 +662,7 @@ window.require.define({"views/templates/main": function(exports, require, module
   var buf = [];
   with (locals || {}) {
   var interp;
-  buf.push('<h2>About me!</h2><div class="row-fluid"><div class="span8"><img src="/images/piotr.png" class="me"/><div class="bio">My name is <b>Piotr Yordanov. </b>I studied electrical and computer engineering, though \nself learning has proven to be much much more rewarding.\nAfter all, software engineering resources are available online!\nI\'ve playing playing the piano since the age of 5. Recently,\nI moved into jazz!<br/>Currently, I am the <b>co-founder </b>of <a href="http://baytbaytak.com">BaytBaytak</a>, a Beirut based real-estate startup.<br/></div></div></div><div class="row-fluid"><div class="span2"><div class="legend"><h2>My Skills:</h2><div class="skills"><ul><li class="zic">Music</li><li class="web">WebDev</li><li class="ai">AI</li><li class="openGL">OpenGL</li></ul></div></div></div><div class="span8"><div id="diagram"></div><div class="get"><div class="arc"><span class="text">Music</span><input type="hidden" value="93" class="percent"/><input type="hidden" value="#BEDBE9" class="color"/></div><div class="arc"><span class="text">WebDev</span><input type="hidden" value="85" class="percent"/><input type="hidden" value="#97BE0D" class="color"/></div><div class="arc"><span class="text">AI</span><input type="hidden" value="50" class="percent"/><input type="hidden" value="#D84F5F" class="color"/></div><div class="arc"><span class="text">openGL</span><input type="hidden" value="30" class="percent"/><input type="hidden" value="#88B8E6" class="color"/></div></div></div></div>');
+  buf.push('<div class="row-fluid"><div class="span8"><h2>About me!</h2><img src="/images/piotr.png" class="me"/><div class="bio">My name is <b>Piotr Yordanov. </b>I studied electrical and computer engineering, though \nself learning has proven to be much much more rewarding.\nAfter all, software engineering resources are available online!\nI\'ve playing playing the piano since the age of 5. Recently,\nI moved into jazz!<br/>Currently, I am the <b>co-founder </b>of <a href="http://baytbaytak.com">BaytBaytak</a>, a Beirut based real-estate startup.<br/></div></div><div class="span4"><div class="stack"><h2>The Stack</h2>This website is powered by <a href="http://nodejs.org">nodejs </a>on the <b>backend. </b><br/>The <b>frontend </b>is maintained by <a href="http://brunch.io">brunch.io</a>, its logic is handled by <a href="http://backbonejs.org">backbonejs</a>, and the responsive design provided by <a href="http://twitter.github.com/bootstrap/">twitter-bootstrap </a>. All of that written with <a href="http://coffeescript.org">coffeescript </a>from <a href="https://github.com/b4winckler/macvim">macvim </a><div class="logo"><a href="http://nodejs.org" class="node"></a><a href="http://coffeescript.org" class="coffee"></a><a href="https://github.com/b4winckler/macvim" class="vim"></a><a href="http://brunch.io" class="brunch"></a><a href="http://backbonejs.org" class="backbone"></a></div></div></div></div><div class="row-fluid"><div class="span2"><div class="legend"><h2>My Skills:</h2><div class="skills"><ul><li class="zic">Music</li><li class="web">WebDev</li><li class="ai">AI</li><li class="openGL">OpenGL</li></ul></div></div></div><div class="span6"><div id="diagram"></div><div class="get"><div class="arc"><span class="text">Music</span><input type="hidden" value="93" class="percent"/><input type="hidden" value="#BEDBE9" class="color"/></div><div class="arc"><span class="text">WebDev</span><input type="hidden" value="85" class="percent"/><input type="hidden" value="#d6bef6" class="color"/></div><div class="arc"><span class="text">AI</span><input type="hidden" value="50" class="percent"/><input type="hidden" value="#7a5aa6" class="color"/></div><div class="arc"><span class="text">openGL</span><input type="hidden" value="30" class="percent"/><input type="hidden" value="#88B8E6" class="color"/></div></div></div><div class="span4"><div id="twitter"><h2>Latest Tweets</h2><div id="tweets"></div></div></div></div>');
   }
   return buf.join("");
   };

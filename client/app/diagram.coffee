@@ -6,7 +6,7 @@ module.exports = o =
     Math.floor (Math.random() * (u - l + 1)) + l
 
   diagram: ->
-    r = Raphael("diagram", 400, 400)
+    r = Raphael("diagram", 450, 450)
     rad = 73
     defaultText = "Skills"
     speed = 250

@@ -1,7 +1,8 @@
-h2 About me!
 .row-fluid
   .span8
+    h2 About me!
     img.me(src="/images/piotr.png")
+
     .bio
       | My name is 
       b Piotr Yordanov. 
@@ -17,6 +18,32 @@ h2 About me!
       a(href="http://baytbaytak.com") BaytBaytak
       | , a Beirut based real-estate startup.
       br
+  .span4
+    .stack
+      h2 The Stack
+      | This website is powered by 
+      a(href="http://nodejs.org") nodejs 
+      | on the 
+      b backend. 
+      br
+      | The 
+      b frontend 
+      | is maintained by 
+      a(href="http://brunch.io") brunch.io
+      | , its logic is handled by 
+      a(href="http://backbonejs.org") backbonejs
+      | , and the responsive design provided by 
+      a(href="http://twitter.github.com/bootstrap/") twitter-bootstrap 
+      | . All of that written with 
+      a(href="http://coffeescript.org") coffeescript 
+      | from 
+      a(href="https://github.com/b4winckler/macvim") macvim 
+      .logo
+        a(href="http://nodejs.org").node
+        a(href="http://coffeescript.org").coffee
+        a(href="https://github.com/b4winckler/macvim").vim
+        a(href="http://brunch.io").brunch
+        a(href="http://backbonejs.org").backbone
 
 .row-fluid
   .span2
@@ -28,7 +55,7 @@ h2 About me!
           li.web WebDev
           li.ai AI
           li.openGL OpenGL
-  .span8
+  .span6
     #diagram
     .get
       .arc
@@ -38,12 +65,16 @@ h2 About me!
       .arc
         span.text WebDev
         input.percent(type='hidden', value='85')
-        input.color(type='hidden', value='#97BE0D')
+        input.color(type='hidden', value='#d6bef6')
       .arc
         span.text AI
         input.percent(type='hidden', value='50')
-        input.color(type='hidden', value='#D84F5F')
+        input.color(type='hidden', value='#7a5aa6')
       .arc
         span.text openGL
         input.percent(type='hidden', value='30')
         input.color(type='hidden', value='#88B8E6')
+  .span4
+    #twitter
+      h2 Latest Tweets
+      #tweets

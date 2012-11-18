@@ -4,12 +4,21 @@ body {
   width: 100%;
   margin: 0;
 }
+body a {
+  color: #9595f1;
+}
+body a:hover {
+  color: #5f5feb;
+}
 #container {
   background: rgba(255,255,255,0.4);
   box-shadow: 0 2px 3px rgba(0,0,0,0.3);
   padding: 15px;
   max-width: 1140px;
   margin: auto;
+  font-family: 'Kite One' !important;
+  font-style: normal;
+  font-weight: 400;
 }
 .legend {
   margin-top: 40px;
@@ -40,10 +49,10 @@ body {
   font-size: 18px;
 }
 .skills .web {
-  background: #97be0d;
+  background: #d6bef6;
 }
 .skills .ai {
-  background: #d84f5f;
+  background: #7a5aa6;
 }
 .skills .openGL {
   background: #88b8e6;
@@ -80,27 +89,6 @@ ol.code li code {
 }
 ol.code code {
   background: none;
-}
-#twitter h1 {
-  text-align: center;
-}
-#twitter {
-  padding: 5px;
-  background-color: #ececec;
-  -moz-box-shadow: 0 0 4px #999;
-  -webkit-box-shadow: 0 0 4px #999;
-  box-shadow: 0 0 4px #999;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  width: 300px;
-}
-li {
-  margin-left: 5px;
-}
-ul,
-ol {
-  margin: 0 0 0 0;
 }
 #git {
   padding: 20px;
@@ -595,7 +583,7 @@ ul.polaroids li a:hover {
 @import url("http://fonts.googleapis.com/css?family=Paprika");
 #header {
   position: relative;
-  height: 97px;
+  height: 75px;
 }
 #header .logo {
   position: absolute;
@@ -617,7 +605,7 @@ ul.polaroids li a:hover {
 #main {
   position: relative;
   border-top: 1px solid rgba(0,0,0,0.03);
-  padding-top: 30px;
+  padding-top: 10px;
   margin: auto;
   width: 98%;
 }
@@ -626,6 +614,9 @@ ul.polaroids li a:hover {
   font-size: 35px;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+#main .row-fluid {
+  line-height: 28px;
 }
 #main .row-fluid .me {
   -webkit-border-radius: 3px;
@@ -642,9 +633,75 @@ ul.polaroids li a:hover {
   float: left;
   margin-right: 3%;
 }
-#main .row-fluid .bio {
-  line-height: 28px;
-  font-family: 'Kite One' !important;
-  font-style: normal;
-  font-weight: 400;
+#main .row-fluid .stack {
+  font-size: 17px;
+}
+#main .row-fluid .stack h2 {
+  text-align: center;
+}
+#main .row-fluid .stack .logo {
+  text-align: center;
+  border-top: 1px solid rgba(0,0,0,0.03);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+#main .row-fluid .stack .logo .node {
+  display: inline-block;
+  width: 42px;
+  height: 49px;
+  background: url("/images/node.png");
+}
+#main .row-fluid .stack .logo .node:hover {
+  background: url("/images/node-hover.png") bottom;
+}
+#main .row-fluid .stack .logo .coffee {
+  margin-left: 15px;
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+  background: url("/images/coffeescript_logo.png");
+}
+#main .row-fluid .stack .logo .vim {
+  margin-left: 15px;
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+  background: url("/images/vtrim.png");
+}
+#main .row-fluid .stack .logo .brunch {
+  margin-left: 15px;
+  display: inline-block;
+  width: 65px;
+  height: 47px;
+  background: url("/images/brunch.png");
+}
+#main .row-fluid .stack .logo .backbone {
+  margin-left: 15px;
+  display: inline-block;
+  width: 57px;
+  height: 52px;
+  background: url("/images/backbone.png");
+}
+#main .row-fluid #twitter {
+  margin-top: 35px;
+  font-size: 15px;
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  border-radius: 8px;
+}
+#main .row-fluid #twitter h2 {
+  margin: 0px;
+  font-size: 25px;
+  text-align: center;
+}
+#main .row-fluid #twitter #tweets {
+  padding: 5px;
+}
+#main .row-fluid #twitter #tweets li {
+  margin-left: 5px;
+  line-height: 25px;
+}
+#main .row-fluid #twitter #tweets ul,
+#main .row-fluid #twitter #tweets ol {
+  margin: 0 0 0 0;
 }
