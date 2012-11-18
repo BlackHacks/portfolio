@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Paprika);
 
 #header
+  margin-top: 20px
   position: relative
-  height: 85px
+  height: 115px
   .logo
     position: absolute
     margin-left: 20px
@@ -17,19 +18,23 @@
       font-weight: italic
       color: gray
     .menu
-      li
-        width: 20%
-        text-align: center
-        display: inline-block
-        .link
-          text-decoration: none
-          color: gray
-          .icon, .text
-            -webkit-transition: all 0.2s ease-in;
-            -moz-transition: all 0.2s ease-in;
-            -ms-transition: all 0.2s ease-in;
-            transition: all 0.2s ease-in;
-            height: 25px
-        .link:hover
-          .icon, .text
-            color: orange
+      ul
+        float: right
+        width: 100%
+        li
+          float: right
+          width: 20%
+          text-align: center
+          display: inline-block
+          .link
+            text-decoration: none
+            color: gray
+            .icon, .text
+              -webkit-transition: all 0.2s ease-in;
+              -moz-transition: all 0.2s ease-in;
+              -ms-transition: all 0.2s ease-in;
+              transition: all 0.2s ease-in;
+              height: 25px
+          .link:hover
+            .icon, .text
+              color: orange
