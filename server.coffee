@@ -18,15 +18,15 @@ app.configure "development", ->
   app.use express.errorHandler()
 
 app.get "/", (req, res) ->
-  res.render "index",
+  res.render "new",
     title: "Piotr Yordanov"
 
 app.get "/music", (req, res) ->
   res.render "music",
     title: "Piotr Yordanov"
 
-app.get "/new", (req, res) ->
-  res.render "new",
+app.get "/old", (req, res) ->
+  res.render "index",
     title: "Piotr Yordanov"
     env: "production"
 
